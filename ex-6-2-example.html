@@ -48,23 +48,28 @@
         }
 
         .full-name {
-            font-size: 40px;
+            margin-top: 30px;
+            font-size: 60px;
             text-transform: uppercase;
-            margin-bottom: 5px;
+            text-align: center;
         }
 
         .first-name {
+            font-family: Comic Sans MS;
             font-weight: 700;
             color: #816477; 
+            
         }
 
         .last-name {
             font-weight: 300;
+            font-family: Comic Sans MS;
             color: #b0a19d; 
         }
 
         .contact-info {
             margin-bottom: 20px;
+            text-align: center;
         }
 
         .email,
@@ -84,7 +89,10 @@
             font-weight: bold;
             display: inline-block;
             margin-right: 10px;
-            text-decoration: underline;
+            font-size: 20px;
+            font-family: Comic Sans MS;
+            text-transform: uppercase;
+            color: #8a5066; 
         }
 
         .details {
@@ -101,16 +109,23 @@
 
         .section__title {
             letter-spacing: 2px;
-            color: #875336;
+            color: #8a5066; 
             font-weight: bold;
+            font-size: 20px;
+            font-family: Comic Sans MS;
             margin-bottom: 10px;
+            margin-left: 10px;
             text-transform: uppercase;
+        }
+        .section__list{
+            margin-bottom: 10px;
         }
 
         .section__list-item {
-            margin-bottom: 10px;
-        }
-
+            margin-bottom: 20px;
+            margin-left: 25px;
+            margin-right: 25px;
+        }   
         .section__list-item:last-of-type {
             margin-bottom: 0;
         }
@@ -133,7 +148,10 @@
         .name {
             font-weight: bold;
             font-size:120%;
-            color: #a85d36;
+
+            color: #8a7385;
+            text-align: center;
+            text-transform: uppercase;
         }
 
         a {
@@ -167,11 +185,26 @@
         input:checked+label {
             background: #79A9CE;
         }
+        img{
+            margin-right: 10px;
+            margin-left: 10px;
+            width: 180px;
+            height: 180px;
+        }
+        .pic{
+            width: 600px;
+            height: 600px;}
+        .about{
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        .interest{
+            font-family: Comic Sans MS;
+            color: #b0a19d; 
+            font-size: 20px;
+            text-transform: uppercase;
+        }
     </style>
-    <script>
-    
-    var album = new Array();
-    </script>
 </head>
 
 <body>
@@ -182,7 +215,7 @@
             <div class="full-name">
                 <span class="first-name">Taylor</span>
                 <span class="last-name">Swift</span>
-            </div>
+            </div><br>
             <div class="contact-info">
                 <span class="email">Birth: </span>
                 <span class="email-val">1989.12.13</span>
@@ -191,8 +224,8 @@
                 <span class="phone-val">U.S.</span>
             </div>
 
-            <div>
-                <img src="taylorSwift.jpg" width="60%">
+            <div class="contact-info">
+                <img class = "pic" src="taylorSwift.jpg">
             </div>
 
             <div class="about">
@@ -203,112 +236,32 @@
         </div>
         <div class="details">
             <div class="section">
-                <div class="section__title">album</div>
-                <div class="section__list">
-                    
+                <div class="section__title">Album</div>
 
-                </div>
-            </div>
-            <div class="section">
-                <div class="section__title">Education</div>
-                <div class="section__list">
-                    <div class="section__list-item">
-                        <div class="left">
-                            <div class="name">Sample Institute of technology</div>
-                            <div class="addr">San Fr, CA</div>
-                            <div class="duration">Jan 2011 - Feb 2015</div>
-                        </div>
-                        <div class="right">
-                            <div class="name">Fr developer</div>
-                            <div class="desc">did This and that</div>
-                        </div>
-                    </div>
-                    <div class="section__list-item">
-                        <div class="left">
-                            <div class="name">Akount</div>
-                            <div class="addr">San Monica, CA</div>
-                            <div class="duration">Jan 2011 - Feb 2015</div>
-                        </div>
-                        <div class="right">
-                            <div class="name">Fr developer</div>
-                            <div class="desc">did This and that</div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-            <div class="section">
-                <div class="section__title">Projects</div>
-                <div class="section__list">
-                    <div class="section__list-item">
-                        <div class="name">DSP</div>
-                        <div class="text">I am a front-end developer with more than 3 years of experience writing html,
-                            css, and js. I'm motivated, result-focused and seeking a successful team-oriented company
-                            with opportunity to grow.</div>
-                    </div>
-
-                    <div class="section__list-item">
-                        <div class="name">DSP</div>
-                        <div class="text">I am a front-end developer with more than 3 years of experience writing html,
-                            css, and js. I'm motivated, result-focused and seeking a successful team-oriented company
-                            with opportunity to grow. <a href="/login">link</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section">
-                <div class="section__title">Skills</div>
-                <div class="skills">
-                    <div class="skills__item">
-                        <div class="left">
-                            <div class="name">
-                                Javascript
-                            </div>
-                        </div>
-                        <div class="right">
-                            <input id="ck1" type="checkbox" checked />
-                            <label for="ck1"></label>
-
-                            <input id="ck2" type="checkbox" checked />
-                            <label for="ck2"></label>
-
-                            <input id="ck3" type="checkbox" />
-                            <label for="ck3"></label>
-
-                            <input id="ck4" type="checkbox" />
-                            <label for="ck4"></label>
-                            
-                            <input id="ck5" type="checkbox" />
-                            <label for="ck5"></label>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div class="skills__item">
-                    <div class="left">
-                        <div class="name">
-                            CSS</div>
-                    </div>
-                    <div class="right">
-                        <input id="ck1" type="checkbox" checked />
-
-                        <label for="ck1"></label>
-                        <input id="ck2" type="checkbox" checked />
-
-                        <label for="ck2"></label>
-                        <input id="ck3" type="checkbox" />
-
-                        <label for="ck3"></label>
-                        <input id="ck4" type="checkbox" />
-                        <label for="ck4"></label>
-                        <input id="ck5" type="checkbox" />
-                        <label for="ck5"></label>
-
-                    </div>
-                </div>
-
+                <table>
+                    <tr width="100%">
+                        <td>
+                            <div class="name"><img src = "1.jpg"><br>Fearless</div>
+                        </td>
+                        <td>
+                            <div class="name"><img src = "2.jpg"><br>Speak Now</div>
+                        </td>
+                        <td>
+                            <div class="name"><img src = "3.jpg"><br>Red</div>
+                        </td>
+                    </tr>
+                    <tr width="100%" margin-top = "10px">
+                        <td>
+                            <div class="name"><img src = "4.jpg"><br>1989</div>
+                        </td>
+                        <td>
+                            <div class="name"><img src = "5.jpg"><br>reputation</div>
+                        </td>
+                        <td>
+                            <div class="name"><img src = "6.jpg"><br>lover</div>
+                        </td>
+                    </tr>
+                </table>
             </div>
             <div class="section">
                 <div class="section__title">
@@ -316,10 +269,21 @@
                 </div>
                 <div class="section__list">
                     <div class="section__list-item">
-                        Football, programming.
+                        <span class = "interest">baking & cooking  </span>   Sometimes she opens her cookbook to a random page and tries to master making whatever is on it, or she creates something of her own.
+                    </div>
+                </div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <span class = "interest">compose  </span>   She writes songs about her experiences both as a hobby and as a form of stress relief.
+                    </div>
+                </div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <span class = "interest">play with cats  </span>   She watches TV frequently with her cats, Meredith Grey, Benjamin Button and Olivia Benson. She loves playing with and cuddling with her cats, and posts photos of them on her Instagram.
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
     </div>
